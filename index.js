@@ -209,8 +209,6 @@ function rastgeleTatlar(){
 
 }
 
-
-
 // NEW DATA ARRAYS FOR STRETCH 2 ⬇️
 // const yeniTatlar = [
 //   "Badem",
