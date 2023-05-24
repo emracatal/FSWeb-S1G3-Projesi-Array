@@ -85,7 +85,7 @@ function cesitEkle(tatlarDizisi,yeniCesit){
 }
 console.log (cesitEkle(orijinalTatlar, "Kakule"));
 
-/*KAYITTAN KONTROL ET
+/*VIDEO KAYITTAN KONTROL ET..
 function cesitEkle(tatlarDizisi,yeniCesit){
   const yeniDizi=[yeniCesit, ..tatlarDisizi]
 }
@@ -182,10 +182,15 @@ Aşağıdakileri yapmak için ortalamaKelimeSayisi işlevini kullanın:
    Örneğin: ortalamaKelimeSayisi(orijinalTatlar) 0 ile 2 arasında bir sayı döndürmelidir.
 */
 
-function ortalamaKelimeSayisi(/*kod buraya*/){
-  /*kod buraya*/
+function ortalamaKelimeSayisi(tatlarDizisi){
+  let toplam =0;
+  for (let i=0;i<tatlarDizisi.length;i++){
+  toplam = toplam + tatlarDizisi[i].split(" ").length;  
+  }
+  return toplam / tatlarDizisi.length;
 }
 
+console.log(ortalamaKelimeSayisi(orijinalTatlar));
 
 /* ALIŞTIRMA 2:
 Firma mevcut tatların yanında artık mevsimlik lezzetler ve hatta bölgesel lezzetler de sunmaktadır. 
@@ -200,10 +205,10 @@ Aşağıdakileri yapmak için rastgeleTatlar işlevini ve yeni dizileri kullanı
   ["Kestane", "Ballı Badem,"..."Hindistan Cevizi", "Kuru üzüm"].
 */
 
+function rastgeleTatlar(){
 
-function rastgeleTatlar(/*kod buraya*/){
-  /*kod buraya*/
 }
+
 
 
 // NEW DATA ARRAYS FOR STRETCH 2 ⬇️
